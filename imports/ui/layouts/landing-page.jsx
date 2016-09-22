@@ -6,7 +6,7 @@ export default class LandingPage extends React.Component {
   render () {
     return (
       <div>
-        <MobileNavbar/>
+        <MobileNavbar />
         <div className="pusher">
           { this.props.children }
           <Footer/>

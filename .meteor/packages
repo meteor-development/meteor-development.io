@@ -22,9 +22,7 @@ flemay:less-autoprefixer
 mdg:validated-method
 aldeed:simple-schema
 react-meteor-data
-aldeed:collection2
 http
 random
-accounts-password
-accounts-facebook
 service-configuration
+newswim:particles@1.1.0

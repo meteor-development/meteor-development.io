@@ -1,19 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { IndexLink, Link } from 'react-router';
+import { IndexLink } from 'react-router';
 
-export default class Navbar extends React.Component {
-    render() {
-      return (
-        <div className="ui large secondary inverted pointing main menu">
-          <div className="ui container">
-            <a className="toc item"><i className="sidebar icon"></i></a>
-            <IndexLink to="/" className="item">Meteor Development</IndexLink>
-            <IndexLink to="/" className="item" activeClassName="active">
-              Home
-            </IndexLink>
-          </div>
-        </div>
-      );
-   }
-}
+const Navbar = () => (
+  <div className="ui large secondary inverted pointing main menu">
+    <div className="ui container">
+      <a className="toc item"><i className="sidebar icon"></i></a>
+      <IndexLink to="/" className="item">MeteorDevelopment.io</IndexLink>
+      <div className="right menu">
+        <a className="ui item">
+          Services
+        </a>
+        <a className="ui item">
+          Process
+        </a>
+        <a className="ui item">
+          Work
+        </a>
+        <a className="ui item">
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
+export default Navbar;
